@@ -7,7 +7,7 @@ function inicializar() {
   btnDropdown.addEventListener("click", alternarDropdown);
 
   // Adiciona um evento de "escuta" de clique no documento para fechar o dropdown.
-  // não é necessário passar event para a função fecharDropdown 
+  // não é necessário passar event para a função fecharDropdown nem para alternarDropdown
   // pois o navegador passa automaticamente o evento como um argumento para ela.
   document.addEventListener("click", fecharDropdown);
 }
