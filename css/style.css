@@ -1,0 +1,51 @@
+/* Define estilos para botões de dropdown */
+.estiloDropdownBtn {
+  background-color: #3ad669;
+  color: rgb(255, 255, 255); /* Cor do texto no botão */
+  padding: 16px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte no botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Define o cursor do mouse como uma mão para indicar que é clicável */
+  border-radius: 10px; /* Adiciona uma borda arredondada de 10px */
+}
+
+/* Define estilos quando o botão de dropdown opera como hover ou focado */
+.estiloDropdownBtn:hover,
+.estiloDropdownBtn:focus {
+  background-color: #30b458;
+}
+
+/* Define estilos para o container do dropdown */
+.dropdown {
+  position: relative; /* Define a posição como relativa para posicionar os elementos internos */
+  display: inline-block; /* Define como um bloco inline para controlar o tamanho */
+}
+
+/* Define estilos para o conteúdo do dropdown */
+.conteudoDivDropdown {
+  display: none; /* Inicialmente, oculta o conteúdo do dropdown */
+  position: absolute; /* Define a posição absoluta para posicionar com base no elemento pai */
+  background-color: #f1f1f1;
+  min-width: 160px; /* Largura mínima do dropdown */
+  overflow: auto; /* Adiciona uma barra de rolagem quando o conteúdo é maior que o contêiner */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra para o dropdown */
+  z-index: 1; /* Define a ordem z para controlar a sobreposição */
+}
+
+/* Define estilos para links dentro do dropdown */
+.conteudoDivDropdown a {
+  color: black; /* Cor do texto dos links */
+  padding: 12px 16px; /* Espaçamento interno dos links */
+  text-decoration: none; /* Remove a decoração de link (sublinhado) */
+  display: block; /* Define como bloco para ocupar a largura total */
+}
+
+/* Define estilos quando os links no dropdown são hover */
+.dropdown a:hover {
+  background-color: #ddd; /* Altera a cor de fundo dos links quando estão hover */
+}
+
+/* Define uma classe para exibir o conteúdo do dropdown */
+.exibir {
+  display: block; /* Torna o conteúdo do dropdown visível (display: block) */
+}
